@@ -27,10 +27,10 @@ html {
  * Customize the background color to match your design.
  */
 
-::-moz-selection {
+/* ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
-}
+} */
 
 ::selection {
   background: #b3d4fc;
@@ -238,6 +238,7 @@ p {
 
 #Skills .full-width {
   color: #E7E5CB;
+  width: 90%;
 }
 
 #Skills h3 {
@@ -250,14 +251,13 @@ p {
 }
 
 #Skills .half-width {
-  display: flex;
-  justify-content: space-around;
-  margin-right: 20px;
+  font-size: 1.1em;
 }
 
 .list ul {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin-right: 15px;
   padding-right: 10px;
 }
@@ -295,10 +295,10 @@ p {
 #work .half-width {
   display: flex;
   justify-content: center;
-  border: #EEEFDA solid 2px;
+  border: #EEEFDA double 5px;
   background-color: #152A3E;
   color: #E7E5CB;
-  margin: 10px;
+  margin: 20px 100px;
   border-radius: 10px;
 }
 
@@ -332,10 +332,10 @@ p {
 
 /* Footer Section */
 
-footer{
+footer {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  flex-direction: row;
 }
 
 footer .content-wrapper {
@@ -343,6 +343,7 @@ footer .content-wrapper {
   justify-content: center;
   color: #EEEFDA;
   margin: 20px;
+  width: 100%;
 }
 
 footer .social-icons {
@@ -357,19 +358,21 @@ footer .social-icons i {
   justify-content: center;
 }
 
-footer .social-icons p{
+footer .social-icons p {
   margin: 10px;
 }
 
 .copyright {
   display: flex;
   background-color: #152A3E;
-  flex-wrap: nowrap; */
-  lex-direction: column;
+  /* flex-wrap: nowrap;  */
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   color: #EEEFDA;
   text-align: center;
   margin: 15px;
+  width: 100%;
 }
 
 /* ==========================================================================
@@ -396,7 +399,7 @@ footer .social-icons p{
 
 .sr-only {
   border: 0;
-  clip: rect(0, 0, 0, 0);
+  /* clip: rect(0, 0, 0, 0); */
   height: 1px;
   margin: -1px;
   overflow: hidden;
@@ -415,7 +418,7 @@ footer .social-icons p{
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
-  clip: auto;
+  /* clip: auto; */
   height: auto;
   margin: 0;
   overflow: visible;
@@ -460,89 +463,174 @@ footer .social-icons p{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for Tablets*/
+
+  p {
+    font-size: 18px;
+  }
+
+  /* header style */
+  header img {
+    width: 18%;
+  }
+
+  .hero {
+    font-size: larger;
+  }
+
+  nav ul {
+    font-size: large;
+  }
+
+
+  /* skills style */
+
+  #Skills .half-width {
+    font-size: 32px;
+  }
+
+  /* work style */
+
+
+  #work .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-basis: 20%;
+  }
+
+  #work .half-width {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* footer style */
+
+  footer .content-wrapper {
+    width: 65%;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  .social {
+    margin: 20px;
+  }
+
+  .social h4 {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
-/* ==========================================================================
+@media only screen and (min-width: 1200px) {
+  /* Style adjustments for desktop */
+
+  /* footer style*/
+
+  footer .content-wrapper {
+    width: 70%;
+    font-size: large;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+
+  }
+
+  footer .social {
+    margin-left: 50px;
+  }
+
+
+  @media print,
+  /* (-webkit-min-device-pixel-ratio: 1.25), */
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+  }
+
+  /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
+  @media print {
 
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
 
-  /*
+    /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
-    content: "";
-  }
+    a[href^="#"]::after,
+    a[href^="javascript:"]::after {
+      content: "";
+    }
 
-  pre {
-    white-space: pre-wrap !important;
-  }
+    pre {
+      white-space: pre-wrap !important;
+    }
 
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    pre,
+    blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+    }
 
-  /*
+    /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
-    display: table-header-group;
-  }
+    thead {
+      display: table-header-group;
+    }
 
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
+    tr,
+    img {
+      page-break-inside: avoid;
+    }
 
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
+    p,
+    h2,
+    h3 {
+      orphans: 3;
+      widows: 3;
+    }
 
-  h2,
-  h3 {
-    page-break-after: avoid;
+    h2,
+    h3 {
+      page-break-after: avoid;
+    }
   }
 }
