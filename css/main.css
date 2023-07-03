@@ -102,6 +102,7 @@ textarea {
 
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -123,7 +124,6 @@ header {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  /* width: 90%; */
 }
 
 header nav {
@@ -152,8 +152,9 @@ header h2 {
   color: #EEEFDA;
 }
 
-header a {
+header a ,footer a{
   color: #EEEFDA;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -169,7 +170,6 @@ ul {
 a {
   color: #e2e3ed;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 ul,
@@ -186,6 +186,7 @@ li {
 
 h1 {
   font-family: 'Lexend Tera', sans-serif;
+  font-size: 1.5em;
 }
 
 h2,
@@ -194,6 +195,7 @@ h4,
 h5,
 p {
   font-family: 'Lekton', sans-serif;
+  font-size: 1.1em;
 }
 
 /* About Section */
@@ -201,7 +203,6 @@ p {
   display: flex;
   justify-content: center;
   background-color: #222;
-  /* width: 90%; */
 }
 
 #about .content-wrapper {
@@ -249,7 +250,6 @@ p {
 
 #Skills .full-width {
   color: #E7E5CB;
-  /* width: 90%; */
 }
 
 #Skills h3 {
@@ -259,6 +259,10 @@ p {
   text-transform: uppercase;
   margin: 20px;
   font-weight: bold;
+}
+
+#Skills .list ul li{
+  font-size: 1em;
 }
 
 #Skills .half-width {
@@ -309,7 +313,7 @@ p {
   border: #EEEFDA double 5px;
   background-color: #152A3E;
   color: #E7E5CB;
-  margin: 20px 40px;
+  margin: 20px 25px;
   border-radius: 10px;
 }
 
@@ -325,6 +329,10 @@ p {
   justify-content: center;
   text-align: justify;
   margin: 15px;
+}
+
+#work .list ul li{
+  font-size: 1.1em;
 }
 
 #work h5 {
@@ -353,8 +361,12 @@ footer .content-wrapper {
   display: flex;
   justify-content: center;
   color: #EEEFDA;
-  margin: 20px;
-  width: 100%;
+  margin: 1px 10px;
+}
+
+.contact-section,.social{
+  margin-left: 10px;
+  padding-left: 10px;
 }
 
 footer .social-icons {
@@ -376,7 +388,6 @@ footer .social-icons p {
 .copyright {
   display: flex;
   background-color: #152A3E;
-  /* flex-wrap: nowrap;  */
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -494,6 +505,24 @@ footer .social-icons p {
     font-size: large;
   }
 
+    /* About style */
+    #about .half-content{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+  
+    #about .desktop-style{
+      width: 100%;
+    }
+
+    #about img{
+      width: 70%;
+      margin-top: 20px;
+      margin-left: 15px;
+      border: #E7E5CB solid 10px;
+    }
+
 
   /* skills style */
 
@@ -506,14 +535,20 @@ footer .social-icons p {
 
   #work .content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
-    flex-basis: 20%;
+    /* flex-basis: 10%; */
   }
+
 
   #work .half-width {
     display: flex;
     justify-content: center;
+    flex-basis: 5%;
+  }
+
+  #work .list{
+    font-size: 16px;
   }
 
   /* footer style */
@@ -543,6 +578,24 @@ footer .social-icons p {
 
 @media only screen and (min-width: 1200px) {
   /* Style adjustments for desktop */
+
+  /* About style */
+  #about .half-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  #about .desktop-style{
+    width: 600px;
+  }
+
+  #about img{
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: #E7E5CB solid 10px;
+  }
 
   /* footer style*/
 
