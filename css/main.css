@@ -261,6 +261,10 @@ p {
   font-weight: bold;
 }
 
+#Skills .list ul li{
+  font-size: 1em;
+}
+
 #Skills .half-width {
   font-size: 1.1em;
 }
@@ -501,6 +505,24 @@ footer .social-icons p {
     font-size: large;
   }
 
+    /* About style */
+    #about .half-content{
+      display: flex;
+      justify-content: space-evenly;
+      flex-direction: row;
+    }
+  
+    #about .desktop-style{
+      width: 100%;
+    }
+
+    #about img{
+      width: 70%;
+      margin-top: 20px;
+      margin-left: 15px;
+      border: #E7E5CB solid 10px;
+    }
+
 
   /* skills style */
 
@@ -515,14 +537,18 @@ footer .social-icons p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    flex-basis: 20%;
+    /* flex-basis: 10%; */
   }
 
 
   #work .half-width {
     display: flex;
     justify-content: center;
-    flex-basis: 30%;
+    flex-basis: 5%;
+  }
+
+  #work .list{
+    font-size: 16px;
   }
 
   /* footer style */
@@ -552,6 +578,24 @@ footer .social-icons p {
 
 @media only screen and (min-width: 1200px) {
   /* Style adjustments for desktop */
+
+  /* About style */
+  #about .half-content{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  #about .desktop-style{
+    width: 600px;
+  }
+
+  #about img{
+    width: 70%;
+    margin-top: 20px;
+    margin-left: 15px;
+    border: #E7E5CB solid 10px;
+  }
 
   /* footer style*/
 
