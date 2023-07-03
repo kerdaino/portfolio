@@ -250,6 +250,7 @@ p {
 
 #Skills .full-width {
   color: #E7E5CB;
+  width: 100%;
 }
 
 #Skills h3 {
@@ -293,6 +294,7 @@ p {
 
 #work .full-width {
   margin: 15px;
+  width: 100%;
 }
 
 #work h2,
@@ -527,7 +529,7 @@ footer .social-icons p {
   /* skills style */
 
   #Skills .half-width {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   /* work style */
@@ -544,7 +546,7 @@ footer .social-icons p {
   #work .half-width {
     display: flex;
     justify-content: center;
-    flex-basis: 5%;
+    flex-basis: 30%;
   }
 
   #work .list{
