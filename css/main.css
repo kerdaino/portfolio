@@ -606,6 +606,18 @@ footer .social-icons p {
     border: #E7E5CB solid 10px;
   }
 
+  /* work style */
+
+  #work .list ul {
+    margin: 10px;
+  }
+  
+  #work .list ul li{
+    font-size: 16px;
+    /* margin-left: 10px; */
+    text-align: center;
+  }
+
   /* footer style*/
 
   footer .content-wrapper {
