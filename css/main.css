@@ -268,6 +268,7 @@ p {
 
 #Skills .half-width {
   font-size: 1.1em;
+  flex-wrap: wrap;
 }
 
 .list ul {
@@ -532,6 +533,7 @@ footer .social-icons p {
     font-size: 30px;
   }
 
+
   /* work style */
 
 
@@ -539,7 +541,6 @@ footer .social-icons p {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    /* flex-basis: 10%; */
   }
 
 
@@ -549,8 +550,14 @@ footer .social-icons p {
     flex-basis: 30%;
   }
 
-  #work .list{
-    font-size: 16px;
+  #work .list ul{
+    box-sizing: content-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  #work .list ul li{
+    font-size: 0.7rem;
   }
 
   /* footer style */
