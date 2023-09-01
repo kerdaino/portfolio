@@ -237,7 +237,7 @@ p {
 
 #about p,
 #about h2 {
-  word-spacing: -2px;
+  word-spacing: -4px;
 }
 
 /* Skills section */
@@ -273,7 +273,7 @@ p {
 
 .list ul {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   margin-right: 15px;
   padding-right: 10px;
@@ -332,6 +332,7 @@ p {
   justify-content: center;
   text-align: justify;
   margin: 15px;
+  word-spacing: -5px;
 }
 
 #work .list ul li{
