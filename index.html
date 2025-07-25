@@ -1,335 +1,233 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Tobi Portfolio</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tobi Adekunle - Software Developer</title>
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <!-- Primary SEO Meta Tags -->
+  <meta name="title" content="Tobi Adekunle - Full Stack Developer | KD Global">
+  <meta name="description" content="Tobi Adekunle is a full-stack web developer helping individuals and small businesses build clean, functional websites that deliver real value.">
 
-  <link rel="manifest" href="site.webmanifest">
-  <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://kerdaino.github.io/portfolio/">
 
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kerdaino.github.io/portfolio/">
+  <meta property="og:title" content="Tobi Adekunle - Full Stack Developer | KD Global">
+  <meta property="og:description" content="I build clean, responsive websites with purpose — not hype. Check out my portfolio and past projects.">
+  <meta property="og:image" content="https://kerdaino.github.io/portfolio/media/og-image.png">
 
-  <meta name="theme-color" content="#fafafa">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://kerdaino.github.io/portfolio/">
+  <meta property="twitter:title" content="Tobi Adekunle - Full Stack Developer | KD Global">
+  <meta property="twitter:description" content="I build clean, responsive websites with purpose — not hype. Check out my portfolio and past projects.">
+  <meta property="twitter:image" content="https://kerdaino.github.io/portfolio/media/og-image.png">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&family=Lexend+Tera:wght@800&display=swap"
-    rel="stylesheet">
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="/media/icon/favicon-16x16.png">
 
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-
-  <!-- Fontawesome-icons -->
-  <script src="https://kit.fontawesome.com/85eceaceac.js" crossorigin="anonymous"></script>
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 
 <body>
+    <!-- Header with Navigation -->
+    <header>
+        <figure class="logo">
+            <img src="/media/logo.svg" alt="brand logo">
+            <figcaption>Tobi Adekunle</figcaption>
+        </figure>
+        <nav id="nav" aria-label="Main navigation">
+            <a href="#">Home</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
 
-  <!-- Add your site or application content here -->
-  <!-- Header section containing name and nav buttons -->
-  <header>
-    <div class="hero">
-      <figure><img src="img/my-logo.svg" alt="website-logo"></figure>
-      <h1>Tobi Adekunle<br>(Kerdaino Dev)</h1>
-      <h2>Web Developer
-      </h2>
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#work">Projects</a></li>
-        <li><a href="#Contact">Contact</a></li>
-        <li><a href="./services/index.html"  class="design">Services</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <!-- About section containing detail description of what the owner do -->
-    <section id="about">
-      <div class="content-wrapper">
-        <h2>About Me</h2>
-        <div class="half-content">
-          <figure><img src="img/my-profile-pic.jpeg" alt="picture of Hezekiah"></figure>
-          <div class="desktop-style">
-            <h3>Greetings, <br>I go by the name of Tobi Adekunle.</h3>
-            <p>I am a web developer specializing in crafting user-friendly websites for entrepreneurs, medium-sized
-              businesses, and major corporations in technology, marketing, eCommerce, consultancies, coaching, and
-              software.
-            </p>
-            <p>My pride lies in creating responsive, accessible, and high-performing websites, meeting the diverse needs
-              of my clients. I started my journey in high school, captivated by the magic of transforming simple text
-              into beautiful online experiences through coding.
-            </p>
-            <p>Beyond coding, I'm dedicated to sharing my faith and actively winning souls for Christ. On a lighter
-              note, you might catch me dancing or exercising indoors, or attempting to sing loudly-though I doubt I have
-              a singing voice!
-
-            </p>
-          </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Hello, I'm Tobi<br><strong>A Software Developer</strong></h1>
+            <div class="buttons">
+                <a href="https://wa.link/m6xyfa" target="_blank" rel="noopener noreferrer">
+                    <button>Got a project?</button>
+                </a>
+                <a href="/media/my-resume.pdf" target="_blank" rel="noopener noreferrer">
+                    <button>My resume</button>
+                </a>
+            </div>
         </div>
-      </div>
+        <div class="hero-img">
+            <img src="/media/profile-image.jpeg" alt="Portrait of Tobi Adekunle">
+        </div>
     </section>
 
-    <!-- Skills section containing all skillsets and tools owner has acquired -->
-    <section id="Skills">
-      <div class="full-width">
-        <h3>SKILLS/TOOLS</h3>
-        <div class="half-width">
-          <div class="list">
-            <ul>
-              <li><i class="fa-brands fa-html5 fa-xl"></i>HTML</li>
-              <li><i class="fa-brands fa-css3-alt fa-xl"></i>CSS</li>
-              <li><i class="fa-brands fa-js fa-xl"></i>JAVASCRIPT</li>
-              <li><i class="fa-brands fa-react fa-xl"></i>React</li>
-              <li><i class="fa-brands fa-git-alt fa-xl"></i>GIT</li>
-              <li><i class="fa-brands fa-github fa-xl"></i>GitHub</li>
-              <li><i class="fa-brands fa-bootstrap"></i>Bootstrap</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="half-width">
-          <div class="list">
-            <ul>
-              <li>VS Code</li>
-              <li>Chrome DevTools</li>
-              <li>CodeSandbox</li>
-              <li>Photoshop</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="half-width">
-          <div class="list">
-            <ul>
-              <li>DOM<br />Manipulation</li>
-              <li>Managing<br />Data Flow</li>
-              <li>FLEXBOX</li>
-              <li>API</li>
-              <li>ES6</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="half-width">
-          <div class="list">
-            <ul>
-              <li>MEDIA<br />QUERIES</li>
-              <li>RESPONSIVE<br />TYPOGRAPHY</li>
-              <li>JSX</li>
-              <li>VERSION<br />CONTROL</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list" role="list">
+            <li>HTML5, CSS3, JavaScript (ES6+)</li>
+            <li>Responsive Web Design (Flexbox & Grid)</li>
+            <li>DOM Manipulation & Event Handling</li>
+            <li>API Integration (RESTful APIs)</li>
+            <li>Node.js & Express.js</li>
+            <li>MongoDB (with Mongoose)</li>
+            <li>Git & GitHub</li>
+            <li>VS Code & Chrome DevTools</li>
+        </ul>
     </section>
 
-    <!-- Work section containing all projects done by the owner -->
-    <section id="work">
-      <div class="full-width">
-        <h2>PROJECTS</h2>
-        <div class="content">
-          <div class="half-width">
-            <a href="https://kerdaino.github.io/my-github-repo-gallery/" target="_blank">
-              <h3>Github Repo Gallery</h3>
-              <figure><img src="img/github-repo.png" alt="photo of Github repo webpages"></figure>
-              <p>A Project that allows you to view all my repository galleries in one place. Click any repo for more
-                details.
-              </p>
-              <h5>Skills</h5>
-              <div class="list">
-                <ul>
-                  <li>APIS</li>
-                  <li>JAVASCRIPT</li>
-                  <li>DOM Manipulation</li>
-                  <li>HTML/CSS</li>
-                </ul>
-              </div>
-              <h5>Tools</h5>
-              <div class="list">
-                <ul>
-                  <li>GitHub</li>
-                  <li>VS Code</li>
-                  <li>Chrome DevTools</li>
-                </ul>
-              </div>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <h2>About me</h2>
+        <p>Hey, I’m Tobi — a full-stack web developer passionate about building clean, functional websites for
+            meaningful work.</p>
+        <p>I care about <strong>small details, the big picture,</strong> and most importantly, the <strong>people behind
+                the projects.</strong></p>
+        <ul>
+            <li>Real Projects Delivered for Local Clients</li>
+            <li>Fast, Functional & Mobile-Responsive Designs</li>
+            <li>3+ Years of Learning & Practice in Web Dev</li>
+            <li>Built for Writers, Small Biz & Creatives</li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project">
+            <a href="https://kerdaino.github.io/stock-market-simplified/" target="_blank" rel="noopener noreferrer">
+                <img src="/media/stock-market-simplified.png" alt="Stock Market Simplified Landing Page Screenshot">
             </a>
-          </div>
-          <div class="half-width">
-            <a href="https://kerdaino.github.io/guessTheWord/" target="_blank">
-              <h3>Guess the Word Game</h3>
-              <figure><img src="img/guess-word.png" alt="photo of the guess-word webpage"></figure>
-              <p>An interactive JavaScript Guess Word Game built using HTML, CSS, and vanilla JavaScript in that you
-                guess
-                the word by entering one letter at a time. If you guess all the letters correctly before you use up your
-                allotted guesses, You win!</p>
-
-              <h5>Skills</h5>
-              <div class="list">
-                <ul>
-                  <li>HTML/CSS</li>
-                  <li>DOM Manipulation</li>
-                  <li>JAVASCRIPT</li>
-                  <li>APIS</li>
-                </ul>
-              </div>
-              <h5>Tools</h5>
-              <div class="list">
-                <ul>
-                  <li>VS Code</li>
-                  <li>CodeSandbox</li>
-                  <li>GitHub</li>
-                </ul>
-              </div>
-            </a>
-          </div>
+            <div>
+                <h3>Stock-Market-Simplified</h3>
+                <p>A responsive landing page for a stock market education platform. Built with HTML and CSS, optimized
+                    for accessibility.</p>
+                <a href="https://github.com/kerdaino/stock-market-simplified" target="_blank"
+                    rel="noopener noreferrer"><button>View GitHub</button></a>
+                <a href="https://kerdaino.github.io/stock-market-simplified/" target="_blank"
+                    rel="noopener noreferrer"><button>View Project</button></a>
+            </div>
         </div>
-        <div class="desktop">
-          <div class="content">
-            <div class="half-width">
-              <a href="https://tyds4j.csb.app/" target="_blank">
-                <h3>Sticky Note App</h3>
-                <figure><img src="img/sticky-note.png" alt="photo of the sticky-note webpage"></figure>
-                <p>An interactive app that allows users to create notes on the web to keep track of tasks.</p>
-                <h5>Skills</h5>
-                <div class="list">
-                  <ul>
-                    <li>ES6</li>
-                    <li>JSX</li>
-                    <li>Managing Data Flow</li>
-                    <li>DOM Manipulation</li>
-                  </ul>
-                </div>
-                <h5>Tools</h5>
-                <div class="list">
-                  <ul>
-                    <li>CodeSandbox</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-            <div class="half-width">
-              <a href="https://kerdaino.github.io/unplugged/" target="_blank">
-                <h3>Unplugged</h3>
-                <figure><img src="img/unplugged.png" alt="photo of Unplugged webpage"></figure>
-                <p>A 3-page responsive website from a design comp built with HTML/CSS that adapts to mobile, tablet, and
-                  desktops screens.
-                </p>
-                <h5>Skills</h5>
-                <div class="list">
-                  <ul>
-                    <li>HTML/CSS</li>
-                    <li>FLEXBOX</li>
-                    <li>MEDIA QUERIES</li>
-                    <li>RESPONSIVE TYPOGRAPHY</li>
-                  </ul>
-                </div>
-                <h5>Tools</h5>
-                <div class="list">
-                  <ul>
-                    <li>VS Code</li>
-                    <li>GitHub</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
-          <div class="content">
-            <div class="half-width">
-              <a href="https://tyvdl6.csb.app/" target="_blank">
-                <h3>Name Tags App</h3>
-                <figure><img src="img/name-tag.png" alt="name-tag webpage picture"></figure>
-                <p>A Name Tag generator built with React that creates bulk name tags using functional components and ES6
-                  modules.</p>
-                <h5>Skills</h5>
-                <div class="list">
-                  <ul>
-                    <li>HTML/CSS</li>
-                    <li>ES6</li>
-                    <li>JSX</li>
-                    <li>MANAGING DATA FLOW</li>
-                  </ul>
-                </div>
-                <h5>Tools</h5>
-                <div class="list">
-                  <ul>
-                    <li>CodeSandbox</li>
-                  </ul>
-                </div>
-              </a>
-            </div>
-          </div>
 
+        <!-- Project 2 -->
+        <div class="project">
+            <a href="https://lifeindetail.netlify.app" target="_blank"><img src="/media/life-in-detail.png"
+                    alt="A Podcast Website Project image"></a>
+            <div>
+                <h3>Life-in-Detail</h3>
+                <p>A modern, responsive, and accessible website designed for a christian content blog. Built with clean
+                    HTML and CSS and headless cms, optimized for usability, performance, and accessibility best
+                    practices.</p>
+                <a href="https://github.com/kerdaino/life-in-detail" target="_blank"><button>View Github</button></a>
+                <a href="https://lifeindetail.netlify.app" target="_blank"><button>View project</button></a>
+            </div>
         </div>
-      </div>
+
+        <!-- Project 3 -->
+        <div class="project">
+            <a href="https://kerdaino.github.io/my-github-repo-gallery/" target="_blank"><img
+                    src="/media/github-repo.png" alt="My Repository Project image"></a>
+            <div>
+                <h3>GitHub Repo Gallery</h3>
+                <p>A web app that pulls and displays all my GitHub repositories using the GitHub API. Built with HTML,
+                    CSS, and JavaScript, it highlights my skills in API integration, DOM manipulation, and responsive
+                    design. Developed using VS Code, GitHub, and Chrome DevTools.</p>
+                <a href="https://github.com/kerdaino/my-github-repo-gallery" target="_blank"><button>View
+                        Github</button></a>
+                <a href="https://kerdaino.github.io/my-github-repo-gallery/" target="_blank"><button>View
+                        project</button></a>
+            </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project">
+            <a href="https://kerdaino.github.io/guessTheWord/" target="_blank"><img src="/media/guess-word.png"
+                    alt="A Game Project image"></a>
+            <div>
+                <h3>Guess the Word Game</h3>
+                <p>An interactive word-guessing game built with HTML, CSS, and vanilla JavaScript. Players guess the
+                    hidden word one letter at a time, winning if they solve it before running out of attempts. Showcases
+                    my skills in DOM manipulation, JavaScript logic, and basic API handling. Developed using VS Code,
+                    GitHub, and CodeSandbox.</p>
+                <a href="https://github.com/kerdaino/guessTheWord" target="_blank"><button>View Github</button></a>
+                <a href="https://kerdaino.github.io/guessTheWord/" target="_blank"><button>View project</button></a>
+            </div>
+        </div>
+
     </section>
-  </main>
 
-  <footer id="Contact">
-    <div class="content-wrapper">
-      <div class="footer-content">
-        <div class="contact-section">
-          <h4>Let's Connect</h4>
-          <address>
-            <p>
-              <a href="mailto:kerdainodev@techie.com" target="_blank">kerdainodev@techie.com</a>
-            </p>
-            <p>
-              +2347011780857
-            </p>
-          </address>
-        </div>
-        <div class="social">
-          <h4>Or, Find Me on</h4>
-          <div class="social-icons">
-            <p>
-              <a href="https://instagram.com/kerdainodevs?igshid=OGQ5ZDc2ODk2ZA==" target="_blank"><i
-                  class="fa-brands fa-instagram"></i>INSTAGRAM</a>
-            </p>
-            <p>
-              <a href="https://twitter.com/kdevsglobal" target="_blank"><i class="fa-brands fa-twitter"></i>TWITTER</a>
-            </p>
-          </div>
-          <div class="social-icons">
-            <p>
-              <a href="https://www.linkedin.com/in/oluwatobiadekunle/" target="_blank"><i
-                  class="fa-brands fa-linkedin"></i>LINKEDIN</a>
-            </p>
-            <p>
-              <a href="https://github.com/kerdaino" target="_blank"><i class="fa-brands fa-github"></i>GITHUB</a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- footer content ends -->
-    </div>
-    <!--footer content-wrapper ends-->
-    <div class="copyright">
-      <p>Copyright 2023<br>Built with the Holyspirit By Tobi Adekunle<br>(Kerdaino Dev)</p>
-    </div>
-  </footer>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2>Have a project? Let’s talk!</h2>
+        <form action="https://formsubmit.co/kdevglobal@gmail.com" method="POST">
+            <!-- Spam Protection -->
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New contact form submission!">
 
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-  <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-  </script>
-  <script src="https://www.google-analytics.com/analytics.js" async></script>
+            <!-- Accessible Form Fields -->
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Your message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Tobi Adekunle | KD Global<br>I build clean, purpose-driven websites — with honesty, not hype.<br>All rights
+            reserved</p>
+        <div class="social-icons" aria-label="Social Media Links">
+            <a href="https://x.com/kdevsglobal" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://github.com/kerdaino" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/oluwatobiadekunle/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <!-- Accessibility & Interaction Script -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const nav = document.querySelector('nav');
+
+        hamburger.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                nav.classList.remove('active');
+            }
+        });
+
+        window.addEventListener('scroll', () => {
+            nav.classList.remove('active');
+        });
+    </script>
 </body>
 
 </html>
